@@ -1,4 +1,12 @@
 <h1>
   {{title}}
 </h1>
-<!-- YOUR ANGULAR CODE HERE -->
+
+<div *ngFor='let number of numbers'>
+  <div *ngIf='number % 3 === 0 && number % 5 === 0'>  FizzBuzz
+  </div>
+  <div *ngIf='number % 3 === 0 && number % 5 !== 0'>Fizz</div>
+  <div *ngIf='number % 5 === 0 && number % 3 !== 0'>Buzz</div>
+  <div *ngIf='number % 3 !== 0 && number % 5 !== 0'>{{number}}
+  </div>
+</div>
