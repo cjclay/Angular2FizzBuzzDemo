@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'FizzBuzz';
+  numbers = Array.apply(null, Array(100)).map( (_,i) =>i)
 }
