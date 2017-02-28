@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'FizzBuzz';
-  numbers = Array.apply(null, Array(101)).map( (_,i) =>i)
+  numbers = Array.apply(null, Array(101)).map( (_,i) =>i).slice(1)
 }
